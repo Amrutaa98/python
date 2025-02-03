@@ -1,0 +1,10 @@
+def myfunc(w1,w2):
+    if w1[0]==w2[0]:
+        return True
+    else:
+        return False
+string=input()
+words=string.split()
+w1=words[0]
+w2=words[1]
+print(myfunc(w1,w2))
