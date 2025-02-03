@@ -1,0 +1,10 @@
+def myfunn():
+    a=int(input())
+    if a>7:
+        x=a-7
+        return 7+2*x
+    else:
+        x=7-a
+        return 7+2*x 
+print(myfunn())
+        
