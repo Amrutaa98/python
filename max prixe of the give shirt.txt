@@ -1,0 +1,5 @@
+a=float(input("enter the 1st shirt prize:"))
+b=float(input("enter the 2nd shirt prize:"))
+c=float(input("enter the 3rd shirt prize:"))
+highest_prize=max(a,b,c)
+print(f"the highest value amoung the three shirt is {highest_prize:.2f}")
