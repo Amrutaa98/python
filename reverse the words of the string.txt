@@ -1,0 +1,4 @@
+def master_yoda(text):
+    return ' '.join(text.split()[::-1])
+text="o my godd"
+print(master_yoda(text))
