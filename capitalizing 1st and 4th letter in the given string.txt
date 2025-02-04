@@ -1,0 +1,8 @@
+def myfuc(name):
+    if len(name)<4:
+        return name
+    modified_string=name[0].upper()+name[1:3]
+    modified_string+=name[3].upper()+name[4:]
+    return modified_string
+name="amruta"
+print(myfuc(name))
