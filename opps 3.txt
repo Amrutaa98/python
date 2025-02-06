@@ -1,0 +1,7 @@
+class myclass:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+info=myclass("amruta",19)
+print(f"name:{info.name}")
+print(f"age:{info.age}")
