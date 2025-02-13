@@ -1,0 +1,24 @@
+class person:
+    def __init__(self):
+        self.name='charles'
+        self.db=self.dob()
+        #self.adress= self.address()
+    def display(self):
+        print('name=',self.name)
+    #this is inner class 
+    class dob:
+        def __init__(self):
+            self.dd=10
+            self.mm=5
+            self.yy=2005
+        def display(self):
+            print('dob{}/{}/{}'.format(self.dd,self.mm,self.yy))
+#creating person class object
+p=person()
+p.display()
+#create inner class object
+x=p.db
+x.display()
+
+
+
