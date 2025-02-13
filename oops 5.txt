@@ -1,0 +1,10 @@
+#understanding the class methods class myclass:
+
+    #this is the wings variables
+    wings=2
+    #this is the class methods
+    @classmethod
+    def fly(cls,name):
+        print('{}flies with {} wings'.format(name,cls.wings))
+bird.fly('sparrow')
+bird.fly('pigeon')
