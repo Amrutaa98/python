@@ -1,0 +1,15 @@
+#this variable or staticvariabl
+class myclass:
+    n=0
+    def __init__(self):
+        myclass.n=myclass.n+1 
+    @staticmethod
+    def no_of_objects():
+        print('no.of instance created:',myclass.n )
+#create 3 instances
+object1=myclass()
+object2=myclass()
+object3=myclass()
+object4=myclass()
+object5=myclass()
+myclass.no_of_objects()
