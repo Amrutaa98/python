@@ -1,0 +1,12 @@
+class car:
+    wheels=4
+    def __init__(self):
+        self.mailage=10
+        self.company='bmw'
+c1=car()
+c2=car()
+c2.mailage=8
+c1.company='porsche'
+car.wheels=6     #to change the class variable
+print(c1.mailage,c1.company,c1.wheels)
+print(c2.mailage,c2.company,c2.wheels)
