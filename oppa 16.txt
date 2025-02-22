@@ -1,0 +1,11 @@
+class moblie:
+    def __init__(self,brand,prize):
+        self.brand=brand
+        self.prize=prize
+    def display(self):
+        print(f"{self.brand} is the best in india")
+        print(f"{self.prize} is the cost of the brand" )
+brand_name1=moblie("vivo",'35k')
+brand_name2=moblie('samsang','45k')
+brand_name1.display()
+brand_name2.display()
