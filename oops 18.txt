@@ -1,0 +1,12 @@
+class human:
+    def __init__(self,name='unknown',age=0):      #here we can acess this line of the code if we dont give any  values 
+        print("construtor called",name)
+        self.name=name
+        self.age=age
+    def walk(self):
+        print(f"but {self.name} with the age {self.age} is walking")
+amruta=human("amruta",20)
+anant=human("anant",12)
+anant.walk()
+arpita=human()
+arpita.walk()       #cheacking wheater ths will work if dont give any values  and it finally work
