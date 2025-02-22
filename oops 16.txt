@@ -1,0 +1,10 @@
+class human:
+    def __init__(self,name,age):
+        print("construtor called",name)
+        self.name=name
+        self.age=age
+    def walk(self):
+        print(f"but {self.name} with the age {self.age} is walking")
+amruta=human("amruta",20)
+anant=human("anant",12)
+anant.walk()
