@@ -1,0 +1,10 @@
+class human:
+    def __init__(self,name,age,work):      #here we can acess this line of the code if we dont give any  values 
+        print("construtor called",name)
+        self.name=name
+        self.age=age
+        self.work=work
+    def about(self):
+        print(f"{self.name} is at her age of {self.age} and working as  {self.work}")
+savita=human("savita",45,"house wife")
+savita.about()
