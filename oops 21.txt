@@ -1,0 +1,21 @@
+class calculator:
+    def __init__(Self):
+        print("calculator is ready to solve your oprations")
+    def add(self,a,b):
+        return a+b
+    def sub(self,a,b):
+        return a-b
+    def mult(self,a,b):
+        return a*b 
+    def divide(self,a,b):
+        if b==0:
+            print("enter the valid input coz b is not divisble by a ")
+        else:
+            return a/b 
+calc=calculator()
+print("addition:",calc.add(10,5))
+print("substraction:",calc.sub(10,5))
+print("multiply:",calc.mult(10,5))
+print("divide:",calc.divide(10,5))
+print("divide:",calc.divide(10,0))
+
