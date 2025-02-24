@@ -1,0 +1,26 @@
+class BankAccount:
+    def __init__(self):
+        self.__balance=1000
+    def deposite(self,amount):
+        if amount>0:
+            self.__balance+=amount
+            print("uh have sucessfully deposited your amount")
+        else:
+            print("uh are tring to deposite invaild amount")
+    def withdraw(self,amount):
+        if amount>self.__balance:
+            print("amount in your account in not sufficient to withdraw")
+        elif amount>0:
+            self.__balance-=amount
+            print(f" ruppee,{amount} is withdrawed sucessfully")
+        else:
+            print("withdrawal amount must be lesser than the zero")
+    def display_balance(self):
+        print(self.__balance)
+acc1=BankAccount()
+print(acc1.display_balance)
+acc1.deposite(500)
+print(acc1.display_balance)
+acc1.withdraw(900)
+print(acc1.display_balance)
+
