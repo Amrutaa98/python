@@ -1,0 +1,21 @@
+class database:
+    def __init__(self):
+        self.__storage={}              #self.storage is the the public attribute 
+                                     #self.__storage is the private attribute(we can access only    through the methods inside the class)
+                                     #self._storage is the protected attribute(it can be accesseable only the class which can inherit    
+    def write(self,key,value):
+        self.__storage[key]=value
+    def read(self,key):
+        if key in  self.__storage:
+            print( self.__storage[key])
+        else:
+            print("db item is not available")
+db=database()
+db.write("amruta","a very good girl")
+print(db.read("amruta"))
+
+
+print(db.__storage)       #it should not print like this ,it should be protected because we are using the concept encapsulation
+                           #so we should convert public attribute to private attribute
+                           #we wil get the error which is not actuallly a error it is protecting our data("database" object has no attribute '__storage' it is the output)
+                           #to get the information we have to access the read method only
