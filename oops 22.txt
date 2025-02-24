@@ -1,0 +1,13 @@
+class database:
+    def __init__(self):
+        self.storage={}
+    def write(self,key,value):
+        self.storage[key]=value
+    def read(self,key):
+        if key in  self.storage:
+            return self.storage[key]
+        else:
+            print("db item is not available")
+db=database()
+db.write("amruta","a very good girl")
+print(db.read("amruta"))
