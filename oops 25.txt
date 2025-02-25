@@ -1,0 +1,14 @@
+class student:
+    def __init__(self):
+        self.__marks=100
+    def add_marks(self,extra_mark):
+        if extra_mark>0:
+            self.__marks+=extra_mark
+            print("your marks have been updated, congragulations")
+        else:
+            print("please check your mark again it is less than zero")
+    def display_marks(self):
+        print(f'the updated mark is {self.__marks}')
+stu1=student()
+stu1.add_marks(23)
+stu1.display_marks()
