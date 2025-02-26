@@ -1,0 +1,5 @@
+there are 3 types of inheritance
+1.singal inhertance(straight from your FAMILY)
+2.multi level inheritance(from your great grand parents to grand parents to your                            parents to you)
+3.multiple inheritance(in the sense uh inherit from your father aswell as mother)
+4.hirarchial(in the sense multiple classes are inheriting for a single base class)
