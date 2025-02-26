@@ -1,0 +1,9 @@
+class Family:
+    def __init__(self,surname):
+        self.surname=surname
+class child(Family):
+    def __init__(self,surname,name):
+        super().__init__(surname)        #super her refers to family which means parent inherited charecter
+        self.name=name
+child=child("dyampur","Amruta")
+print(f"{child.name} {child.surname}")
