@@ -1,0 +1,15 @@
+class Notification:
+    def send(Self):
+        print("notification self")
+
+class emailnotification(Notification):
+    def send(Self):
+        print("email sent")
+class SMSNotification(Notification):
+    def send(self):
+        print("SMS sent")
+
+a=SMSNotification()
+a.send()
+a=emailnotification()
+a.send()
