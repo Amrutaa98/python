@@ -1,0 +1,13 @@
+class student:
+    def __init__(Self,name,age):
+        Self.name=name
+        Self.age=age
+a=student("amruta",20)
+a.age=100              #there is not controll over data it can change any time as we wish
+                       #so wee use the getters and setter
+                       #so can convert the public attribute to the private attribute
+                       #by giving double underscore so then we cant controll over the data we cant chage any data
+
+print(a.age)
+
+
