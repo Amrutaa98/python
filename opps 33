@@ -1,0 +1,12 @@
+class student:
+    def __init__(Self,name,age):
+        Self.__name=name
+        Self.__age=age
+    def get_name(Self):
+        return Self.__name        #even tho we have a private attribute if we want to print then we can use the get method 
+                                  #we can get the name if wee call it  in inside the get method 
+
+
+a=student("amruta",20)
+a.age=100
+print(a.get_name())    #the private attribute is accessed by the getters
