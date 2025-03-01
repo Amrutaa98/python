@@ -1,0 +1,15 @@
+class student:
+    def __init__(Self,name,age):
+        Self.__name=name
+        Self.__age=age
+    def get_name(Self):
+        return Self.__name        #even tho we have a private attribute if we want to print then we can use the get method 
+                                  #we can get the name if wee call it  in inside the get method 
+   
+    def set_name(Self,name):       #even it is a private attribute we can change the name by useing the setters
+        Self.__name=name
+
+a=student("amruta",20)
+print(a.get_name())    #the private attribute is accessed by the getters
+a.set_name("arpita")
+print(a.get_name())    #the private attribute is changed by using the setters
