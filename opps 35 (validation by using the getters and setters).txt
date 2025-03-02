@@ -1,0 +1,31 @@
+class student:
+    def __init__(Self,name,age):
+        Self.__name=name
+        Self.__age=age
+    def get_name(Self):
+        return Self.__name        #even tho we have a private attribute if we want to print then we can use the get method 
+                                  #we can get the name if wee call it  in inside the get method 
+    def get_age(self):
+        return self.__age
+   
+   
+    def set_name(Self,name):       #even it is a private attribute we can change the name by useing the setters
+        Self.__name=name
+
+    def set_age(Self,age):
+        if isinstance(age,int):         #it is used for thr validation 
+                                        #to even give the vvalidation we want getters and setters
+            Self.___age=age
+        else:
+            print("age should be integer,try again")
+
+a=student("amruta",20)
+a.set_age(21)
+
+print(f"name:{a.get_name()}")
+print(f"age:{a.get_age()}")
+
+
+
+
+
