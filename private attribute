@@ -1,0 +1,14 @@
+class Account:
+    def __init__(self,a,b,c):
+        self._name=a
+        self._number=b
+        self.__balance=c                   #double under score is the sybol of the private attribute
+print("the details accept the private key")
+acc=Account("amruta",1234,10000000000)
+print("acc details")
+print("name:",acc._name)
+print("number:",acc._number)
+print("balance:",acc.__balance)
+
+
+
