@@ -1,0 +1,14 @@
+class Account:
+    def __init__(self,a,b,c):
+        self._name=a
+        self._number=b
+        self.__balance=c
+print("private attribute reveling")
+acc=Account("amruta",2345,10000000000)
+print("account details")
+print("name:",acc._name)
+print("number:",acc._number)
+print("balance:",acc._Account__balance)     #if uh want to acess the private
+                                            #then then use the single underscore bfore the class
+
+
