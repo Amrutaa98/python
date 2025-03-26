@@ -1,0 +1,19 @@
+class player:
+    count=0
+    game="chess"
+    def __init__(self,name,rank):
+        self.name=name
+        self.rank=rank
+        player.count=player.count+1
+    def show(self):
+        print("name:",self.name ,"rank:",self.rank)
+    @classmethod
+    def howmany(cls):
+        print("num of the players are :",cls.count)
+
+p1=player("amruta",1)
+p1.show()
+p2=player("priya",2)
+p2.show()
+player.howmany()
+print(p1.game)
