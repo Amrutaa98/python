@@ -1,0 +1,16 @@
+class father:
+    def __init__(self):
+        print("father constructor")
+        super().__init__()
+
+class mother:
+    def __init__(self):
+        print("mother constructor")
+
+class  child(father,mother):
+    def __init__(self):
+        print("child constructor")
+        super().__init__()
+
+#driver code
+c=child()
