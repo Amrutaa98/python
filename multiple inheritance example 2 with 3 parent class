@@ -1,0 +1,42 @@
+class father:
+    def __init__(self,color,cookingskils,height):
+        print("father constructor")
+        self.color=color
+
+
+        super().__init__(height,cookingskils)       # invoking super cls by passing acutal argument
+    def display(self):
+        print("color:",self.color)
+        super().display()
+
+class mother:
+    def __init__(self,height,cookingskils):                #formal argument
+        print("mother constructor")
+        self.height=height               #
+        super().__init__(cookingskils)
+    def display(self):
+        print("height:",self.height)
+        super().display()
+
+
+class grandmother:
+    def __init__(self,cookingskils):
+        self.cookingskils=cookingskils
+    def display(self):
+        print('cookingskils:',self.cookingskils)
+
+
+class  child(father,mother,grandmother):
+    def __init__(self,color,cookingskils,height,name,age):
+        print("child constructor")
+        self .name=name
+        self.age=age
+        super().__init__(color,height,cookingskils)
+    def display(self):
+        print("name:",self.name)
+        print("age:",self.age)
+        super().display()
+
+#driver code
+c=child("black","best",5.8,"amruta",20)      #acctual parameter
+c.display()
